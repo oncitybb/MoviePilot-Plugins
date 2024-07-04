@@ -1033,7 +1033,7 @@ class IYUUAutoSeed(_PluginBase):
                     'Accept': 'application/json, text/plain, */*',
                     'x-api-key': apikey
                 }
-            ).post_res(f"{site.get('url')}api/torrent/genDlToken", params={
+            ).post_res(f"https://api.m-team.io/api/torrent/genDlToken", params={
                 'id': tid
             })
             if not res:
